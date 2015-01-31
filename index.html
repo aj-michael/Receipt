@@ -34,8 +34,8 @@
         {{/each}}
       </tbody>
     </table>
-    <div class="wrapper"><br><br>
-      <button {{action 'openModal' 'modal' model}} class="pure-button">new receipt</button>
+    <div class="wrapper"><br><br><h3>
+      <button {{action 'openModal' 'modal' model}} class="pure-button">new receipt</button></h3>
     </div>
     {{outlet}}
     </section>
@@ -48,10 +48,11 @@
 
   <script type="text/x-handlebars" data-template-name="modal">
     {{#modal-dialog action="close"}}
-      <h3 class="flush--top">new receipt</h3>
-      <p>{{input value=user}}</p>
-      <p>{{input value=cost}}</p>
-      <p>{{input value=description}}</p>
+      <h3 class="flush--top">new receipt
+      <button {{action "close"}} class="pure-button header-button">done</button></h3>
+      <p>{{input value=user placeholder="user"}}</p>
+      <p>{{input value=cost placeholder="12.50"}}</p>
+      <p>{{input value=description placeholder="description" insert-newline="close"}}</p>
     {{/modal-dialog}}
   </script>
 
@@ -73,7 +74,6 @@
   <script src="js/models/user.js"></script>
   <script src="js/controllers/receipt_controller.js"></script>
   <script src="js/controllers/receipts_controller.js"></script>
-  <script src="js/views/receipt_input_component.js"></script>
   <script src="js/helpers/money.js"></script>
 </body>
 </html>

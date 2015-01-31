@@ -11,8 +11,11 @@ h1 {
 }
 
 .modal {
-  position: relative;
+  position: fixed;
+  top: 25%;
+  left: 50%;
   margin: 10px auto;
+  margin-left: -150px;
   width: 300px;
   background-color: #fff;
   padding: 1em;
@@ -37,6 +40,7 @@ input {
 
 .flush--top {
   margin-top: 0;
+  margin-bottom: 40px;
 }
 
 .wrapper {
@@ -45,5 +49,8 @@ input {
 }
 
 button {
-  vertical-align: bottom;
+}
+
+.header-button {
+  float: right;
 }
