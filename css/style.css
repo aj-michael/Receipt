@@ -1,3 +1,49 @@
 .ember-application {
   margin: 20px;
 }
+
+h1 {
+  font-family: "Helvetica Neue";
+  font-weight:500;
+  font-size: 100px;
+  line-height: 80px;
+  text-align: center;
+}
+
+.modal {
+  position: relative;
+  margin: 10px auto;
+  width: 300px;
+  background-color: #fff;
+  padding: 1em;
+}
+
+.overlay {
+  height: 100%;
+  width: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  background-color: rgba(0,0,0,0.2);
+}
+
+input {
+  width: 100%;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.flush--top {
+  margin-top: 0;
+}
+
+.wrapper {
+  text-align: center;
+  height: 200px;
+}
+
+button {
+  vertical-align: bottom;
+}
